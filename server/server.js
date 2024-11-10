@@ -8,9 +8,9 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 // await connectDB();
 
-// //middlewares
-// app.use(express.json());
-// app.use(cors());
+//middlewares
+app.use(express.json());
+app.use(cors());
 
 //api route
 app.get("/home", (req, res) => {
