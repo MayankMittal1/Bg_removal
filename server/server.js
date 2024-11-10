@@ -6,14 +6,14 @@ import connectDB from "./config/mongodb.js";
 //app config
 const PORT = process.env.PORT || 3000;
 const app = express();
-await connectDB();
+// await connectDB();
 
-//middlewares
-app.use(express.json());
-app.use(cors());
+// //middlewares
+// app.use(express.json());
+// app.use(cors());
 
 //api route
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
   res.status(200).send("Hello World");
 });
 
