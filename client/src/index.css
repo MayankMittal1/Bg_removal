@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Outfit;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px; /* Adjust track height */
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Slider Thumb for Webkit Browsers */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: purple;
+  cursor: pointer;
+  background-image: url('/slide_icon.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid white; /* Optional: adds border around thumb */
+}
+
+/* Slider Thumb for Mozilla Firefox */
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: purple;
+  cursor: pointer;
+  background-image: url('/slide_icon.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.bg-layer{
+  background-image: url(/bg_layer.png);
+}
