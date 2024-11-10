@@ -20,6 +20,3 @@ app.get("/home", (req, res) => {
 app.listen(PORT, () => {
   console.log("server is running on port" + PORT);
 });
-
-// Export the Express API
-module.exports = app
